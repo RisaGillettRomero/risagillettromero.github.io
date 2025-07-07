@@ -6,9 +6,99 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
 
+    <style>
+        [class*= "col"] {
+            padding: 1rem; /*relative to size of root, html*/
+            background-color: burlywood;
+            border: 2px solid #fff;
+            color: #fff;
+
+        }
+    </style>
 </head>
 <body>
-    <h1> Portfolio</h1>
+    <div class="container border"> 
+        <div class="row">
+            <div class="col"> Content
+                <button class="btn btn-primary">Click me!</button>
+            </div>
+        </div>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 </body>
 </html>
+
+    <!-- 
+        container-fluid: entire width of screen
+        container: most of screen, padding on either side
+        container-lg: 100% width until lg. breakpoint lg
+        border: border
+
+        col: all of the divs in the col class will be equal in size 
+        col-6: this div will be 6/12 width, rest are evenly divided
+        col-md-6: this div will be 6/12 width until md, then it will be 100% width. breakpoint md
+
+        if you set a height 
+        row align-items-start: align content to top of block
+        row align-items-center:^center
+        row align-items-end: ^end
+
+        col-xxl-1 col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-12 : good for grid of 12
+
+        row justify-content-start : align content within row to start of row
+        row justify-content-center: ^center
+        row justify-content-end: ^end
+
+        my-5  margin (m) top and bottom (y) 5(max) good for spacing out containers
+        gx-1  gutter space in the x direction between col and row. between end of row and container border. 1 minimum
+        gy-5 gutter space in the y direction between columns. 5 maximum
+
+        btn btn-lg: large button 
+        btn: regular sized button 
+        btn btn-sml: small button
+
+        card size
+        row > col-exampleSize > card: use within col
+        card w-50: card width 50%
+
+        card group from website is useful
+        card text-white bg-dark is a nice card setup
+
+        p.h1 largest
+        p.h6 smallest
+
+        display-1 to display-6. thinner headings
+
+    -->
+
+
+
+  <!-- Most recent posts
+        <div class="card-group">
+            <div class="card">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+        </div>
+    -->
